@@ -1,0 +1,45 @@
+.o-row{
+  position: relative;
+  padding: rem(16px) rem(16px) 0;
+}
+
+.o-row--sm{
+  padding: rem(24px) rem(16px);
+
+  @include mq(phone-large){
+    padding: rem(24px) rem(32px);
+  }
+}
+
+.o-row--md{
+  padding: rem(48px) rem(16px);
+
+  @include mq(phone-large){
+    padding: rem(48px) rem(32px);
+  }
+}
+
+.o-row-half--md{
+  padding-top: rem(48px);
+
+  @include mq(phone-large){
+    padding: rem(48px) rem(32px) 0;
+  }
+}
+
+.o-row--splitted-right{
+
+  @include mq(1800px){
+    margin-right: (100vw/10);
+  }
+
+  @include mq(1800px){
+    margin-right: (100vw/10);
+  }
+}
+
+.o-row--splitted-left{
+  @include mq(1800px){
+    margin-left: (100vw/10);
+  }
+}

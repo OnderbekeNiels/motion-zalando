@@ -1,0 +1,37 @@
+// Q1? Wat geldt voor onze hele website?
+// Dat gaan we hier importen en gebruiken in onze App.tsx (globale styles).
+@import './01-settings/colors.module.scss';
+@import './01-settings/global.module.scss';
+@import './01-settings/typography.module.scss';
+
+@import './02-tools/functions.scss';
+@import './02-tools/mixins.scss';
+
+@import './03-generic/reset.module.scss';
+
+@import './04-elements/page.module.scss';
+
+// Q2? Hoe gaan we herbruikbare CSS afhandelen?
+// 05 Objects
+@import './05-objects/row.module.scss';
+@import './05-objects/container.module.scss';
+@import './05-objects/section.module.scss';
+
+// 06 Components
+@import './06-components/button.module.scss';
+@import './06-components/header.module.scss';
+@import './06-components/screencast.module.scss';
+@import './06-components/article.module.scss';
+@import './06-components/card.module.scss';
+@import './06-components/delivery-service-icon.scss';
+@import './06-components/footer.module.scss';
+
+// -> react components van maken
+
+// TODO: utilities
+
+@import './07-utilities/colors';
+@import './07-utilities/text';
+@import './07-utilities/margin-bottom';
+@import './07-utilities/flex';
+@import './07-utilities/max-width';

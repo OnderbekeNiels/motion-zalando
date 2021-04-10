@@ -1,0 +1,66 @@
+.c-button{
+
+    &:hover{
+        background-color: map-get(map-get($palettes, color-neutral), 500);
+    }
+
+    &:focus{
+        box-shadow: 0 0 0 4px map-get(map-get($palettes, color-accents), orange-base);
+    }
+
+    all: unset;
+    cursor: pointer;
+    font-size: $base-font-size;
+    font-weight: 700;
+    line-height: 1;
+    padding: rem(16px) rem(24px);
+    color: map-get(map-get($palettes, color-neutral), 900)
+}
+
+.c-button + .c-button{
+    margin-left: rem(16px);
+}
+
+
+.c-button--cta{
+
+    &:hover{
+        background-color: map-get(map-get($palettes, color-neutral), 900);
+    }
+
+    color: map-get(map-get($palettes, color-neutral), 100);
+    background-color: map-get(map-get($palettes, color-accents), purple-500);
+}
+
+.c-button--arrow{
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: $base-font-size;
+    font-weight: 700;
+    line-height: rem(24px);
+    padding: rem(16px) 0;
+    color: map-get(map-get($palettes, color-neutral), 900);
+
+     &:hover{
+        color: map-get(map-get($palettes, color-accents), purple-500);
+
+        transform: translateX(8px);
+        transition: transform 0.2s ease-out;
+
+        .c-button__arrow{
+            stroke: map-get(map-get($palettes, color-accents), purple-500);
+        }
+    }
+
+    
+}
+
+.c-button__arrow{
+    width: rem(24px);
+    height: rem(24px);
+    margin-left: rem(8px);
+    stroke: map-get(map-get($palettes, color-neutral), 900);
+}
+

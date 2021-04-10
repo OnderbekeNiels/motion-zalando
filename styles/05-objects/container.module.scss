@@ -1,0 +1,20 @@
+$translateValue: (100vw/10) /2;
+
+.o-container {
+	max-width: map-get($breakpoints, tablet-large);
+	margin: auto;
+}
+
+.o-container--splitted-right{
+	@include mq(1800px){
+    transform: translateX((100vw/10) /2);
+    transition: transform 1.5s ease-out;
+  }
+}
+
+.o-container--splitted-left{
+	@include mq(1800px){
+    transform: translateX(-((100vw/10) /2));
+    transition: transform 1.5s ease-out;
+  }
+}

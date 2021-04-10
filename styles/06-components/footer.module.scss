@@ -1,0 +1,51 @@
+.c-footer{
+    margin-top: rem(96px);
+    padding: rem(48px) rem(16px) rem(28px);
+}
+
+.c-footer__content{
+    max-width: map-get($breakpoints, tablet-large);
+    margin: auto
+}
+
+.c-footer__logo{
+    cursor: pointer;
+    height: rem(48px);
+    margin: 0 rem(32px) rem(48px) 0 ;
+}
+
+.c-footer__social-icon{
+    fill: none;
+    stroke: #fff;
+    width: rem(48px);
+    height: rem(48px);
+    margin-bottom: rem(48px);
+    cursor: pointer;
+}
+
+.c-footer__social-icon + .c-footer__social-icon{
+    margin-left: rem(24px);
+}
+
+.c-footer__text{
+    font-weight: 700;
+}
+
+.c-footer__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(tablet){
+        justify-content: space-between;
+    }
+}
+
+.c-footer__link{
+    all: unset;
+    cursor: pointer;
+    font-size: 16;
+    color: white;
+    margin-left: rem(16px);
+}

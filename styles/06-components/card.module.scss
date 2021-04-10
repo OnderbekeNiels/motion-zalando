@@ -1,0 +1,34 @@
+.c-card{
+    padding: rem(24px) rem(16px);
+    background-color: map-get(map-get($palettes, color-neutral), 100);
+    max-width: rem(284px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.c-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(24px);
+
+    @include mq(tablet-large){
+        justify-content: space-between;
+    }
+}
+
+.c-card__title{
+    font-family: $font-stack-beta;
+    font-weight: 700;
+    margin-bottom: rem(16px);
+}
+
+.c-card__animation{
+    width: rem(200px);
+    height: rem(200px);
+    background-color: #6ad0ff;
+    margin-bottom: rem(24px);
+}

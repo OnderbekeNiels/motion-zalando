@@ -1,0 +1,54 @@
+.c-article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: rem(16px);
+}
+
+.c-article__info{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+
+    line-height: 1.3;
+    font-size: rem(24px);
+    max-width: rem(476px);  
+
+    @include mq(tablet){
+        font-size: rem(32px);
+    }
+}
+
+.c-article__info--right{
+    justify-self: end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.c-article__image{
+
+    align-self: flex-end;
+
+    min-width: rem(680px) * 0.4;
+    min-height: rem(424px) * 0.4;
+
+    @include mq(tablet){
+        width: rem(680px) * 0.9;
+        height: rem(424px) * 0.9;
+    }
+
+    @include mq(tablet-large){
+        width: rem(680px);
+        height: rem(424px);
+    }
+}
+
+.c-article__title{
+    font-weight: 700;
+}
+
+.c-article__description{
+    font-family: $font-stack-beta;
+}
+
+

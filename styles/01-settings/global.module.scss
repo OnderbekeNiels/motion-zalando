@@ -1,0 +1,15 @@
+// ---
+// Breakpoints
+// ---
+
+$breakpoints: (
+  phone-small: 321px,
+  phone: 360px,
+  phone-large: 540px,
+  tablet: 768px,
+  tablet-large: 1200px,
+  desktop: 1440px,
+  desktop-large: 1640px,
+) !default;
+
+

@@ -1,0 +1,24 @@
+.c-header{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: map-get($breakpoints, tablet-large);
+    padding: rem(52px) rem(16px) 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.c-header__action{
+    display: none;
+
+  @include mq(tablet){
+    display: block;
+    }
+}
+
+
+.c-header__logo{
+    width: rem(240px);
+}

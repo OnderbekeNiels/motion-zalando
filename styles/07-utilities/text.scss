@@ -1,0 +1,33 @@
+.u-text-headline{
+    font-size: rem(38px);
+    line-height: 1.2;
+    font-weight: 700;
+
+    @include mq(phone-large){
+    font-size: rem(48px);
+  }
+}
+
+.u-text-subheadline{
+    font-size: rem(24px);
+    line-height: 1.125;
+    font-family: $font-stack-beta;
+
+    @include mq(phone-large){
+    font-size: rem(32px);
+  }
+}
+
+.u-text-title{
+    font-size: rem(32px);
+    line-height: rem(36px);
+    font-weight: 700;
+}
+
+.u-text--align-center{
+    text-align: center;
+}
+
+.u-text--align-right{
+    text-align: right;
+}
