@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+
 import { GoogleFonts } from "next-google-fonts";
 
 import Article from '../components/Article';
@@ -86,13 +86,12 @@ export default function Home() {
             </Container>
           </Row>
           <Row className='o-row--md u-bg-color-accents--yellow-250'>
-            <Fade bottom duration={1200}>
+            
               <Container className='c-card-container'>
                 <Card title='Bewaar de artikelen die je leuk vindt.' description='Geef de artikelen die jou aantrekken een hartje & vindt deze steeds terug na het scrollen door ons assortiment.' animation={heartPop} />
                 <Card title='Nieuw kledingstijl ? Help! ' description='Scroll door vele verschillende stijlen en vindt de look die bij jou past! Zalando sorteert ze alvast voor jou.' animation={clothesCarousel} />
                 <Card title='Betalen? Mogelijkheden genoeg!' description='Betalen bij zalando is een fluitje van een cent. Betaal met Bancontact, Paypal, Meastro, Mastercard, Visa, Amex of gewoonweg met een overschrijving.' animation={card} />
               </Container>
-            </Fade>
           </Row>
         </Section>
         <Section className='o-section--md'>

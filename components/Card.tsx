@@ -1,14 +1,21 @@
 import { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 import Lottie from 'react-lottie';
 
 export default function Card(props: any) {
 
-    const [pause, setPause] = useState<boolean>(false);
+    const [pause, setPause] = useState<boolean>(true);
 
-    setTimeout(function () { setPause(!pause); }, 2500);
+    const showAnimation = () =>{
+        setTimeout(() =>{
+            
+        },2000)
+        setPause(false);
+    }
 
     const defaultOptions = {
-        loop:false,
+        loop: false,
+        autoPlay: false,
         animationData: props.animation,
         rendererSettings: {
             preserveAspectRatio: "xMidYMid slice"
@@ -16,7 +23,7 @@ export default function Card(props: any) {
     };
 
     return (
-        <article className='c-card'>
+        <Fade onReveal={() => showAnimation} bottom duration={800}><article className='c-card' >
             <Lottie
                 options={defaultOptions}
                 height={200}
@@ -26,6 +33,7 @@ export default function Card(props: any) {
             <p>
                 {props.description}
             </p>
-        </article>
+        </article></Fade>
+
     )
 }
