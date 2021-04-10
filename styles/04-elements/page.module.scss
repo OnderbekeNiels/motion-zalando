@@ -6,6 +6,10 @@ html {
   box-sizing: border-box;
 }
 
+::selection{
+  background-color: map-get(map-get($palettes, color-accents), orange-500);
+}
+
 *,
 *:before,
 *:after {

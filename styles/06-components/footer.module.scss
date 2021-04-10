@@ -1,6 +1,10 @@
 .c-footer{
     margin-top: rem(96px);
-    padding: rem(48px) rem(16px) rem(28px);
+    padding: rem(32px) rem(16px) rem(24px);
+
+    @include mq(phone-large){
+        padding: rem(48px) rem(32px) rem(28px);
+    }
 }
 
 .c-footer__content{
@@ -11,7 +15,7 @@
 .c-footer__logo{
     cursor: pointer;
     height: rem(48px);
-    margin: 0 rem(32px) rem(48px) 0 ;
+    margin: 0 rem(32px) rem(40px) 0 ;
 }
 
 .c-footer__social-icon{
@@ -19,7 +23,7 @@
     stroke: #fff;
     width: rem(48px);
     height: rem(48px);
-    margin-bottom: rem(48px);
+    margin-bottom: rem(40px);
     cursor: pointer;
 }
 
@@ -36,8 +40,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: rem(8px);
 
-    @include mq(tablet){
+    @include mq(phone-large){
         justify-content: space-between;
     }
 }
@@ -47,5 +52,9 @@
     cursor: pointer;
     font-size: 16;
     color: white;
-    margin-left: rem(16px);
+    
+}
+
+.c-footer__link  + .c-footer__link{
+margin-left: rem(16px); 
 }

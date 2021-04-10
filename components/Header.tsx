@@ -16,6 +16,7 @@ export default function Header() {
                 <Button text='AANMELDEN' href='https://www.zalando.be/myaccount/'></Button>
                 <Button text='REGISTREER' className='c-button--cta' href='https://www.zalando.be/login/?view=register'></Button>
             </div>
+            <svg className='c-header__action-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         </header>
     )
 }

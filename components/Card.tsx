@@ -5,7 +5,7 @@ export default function Card(props: any) {
 
     const [pause, setPause] = useState<boolean>(false);
 
-    setTimeout(function () { setPause(!pause); }, 3000);
+    setTimeout(function () { setPause(!pause); }, 2500);
 
     const defaultOptions = {
         loop:false,

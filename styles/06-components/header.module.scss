@@ -5,9 +5,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: map-get($breakpoints, tablet-large);
-    padding: rem(52px) rem(16px) 0;
+    padding: rem(32px) rem(16px) 0;
     margin: auto;
     cursor: pointer;
+
+    @include mq(phone-large){
+        padding: rem(52px) rem(32px) 0;
+    }
+
+
 }
 
 .c-header__action{
@@ -18,7 +24,21 @@
     }
 }
 
+.c-header__action-icon{
+    display: block;
+    width: rem(24px);
+    stroke: map-get(map-get($palettes, color-accents), purple-500);
+
+  @include mq(tablet){
+    display: none;
+    }
+}
+
 
 .c-header__logo{
+    width: rem(140px);
+
+    @include mq(tablet){
     width: rem(240px);
+    }
 }
