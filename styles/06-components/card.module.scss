@@ -2,6 +2,10 @@
     padding: rem(24px) rem(16px);
     background-color: map-get(map-get($palettes, color-neutral), 100);
     max-width: rem(284px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;

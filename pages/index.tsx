@@ -114,7 +114,7 @@ export default function Home() {
           </Row>
           <Row className='o-row-half--md o-row--splitted-right u-bg-color-accents--gold-500  u-flex-9-of-10'>
             <Container className='o-container--splitted-right'>
-              <Article title='zalando lounge' description='Op zoek naar een deal? Op zalando lounge vind je steeds kortingen op zowel dames als heren kleding & accesoires. Zeker het bekijken waard.' imgSrc='/img/png/lounge.png' imgAlt='Foto van accesoires.' imgWidth='680px' imgHeight='424px' hasButton={true} buttonTitle='Shop hier' href='https://www.zalando-lounge.com' />
+              <Article title='zalando lounge' description='Op zoek naar een deal? Op zalando lounge vindt je steeds kortingen op zowel dames als heren kleding & accesoires. Zeker het bekijken waard.' imgSrc='/img/png/lounge.png' imgAlt='Foto van accesoires.' imgWidth='680px' imgHeight='424px' hasButton={true} buttonTitle='Shop hier' href='https://www.zalando-lounge.com' />
             </Container>
           </Row>
         </Section>
