@@ -1,21 +1,21 @@
 .c-footer{
     margin-top: rem(96px);
-    padding: rem(32px) rem(16px) rem(24px);
-
-    @include mq(phone-large){
-        padding: rem(48px) rem(32px) rem(28px);
-    }
 }
 
 .c-footer__content{
     max-width: map-get($breakpoints, tablet-large);
-    margin: auto
+    margin: auto;
+    padding: rem(32px) rem(8px) rem(24px);
+
+    @include mq(phone-large){
+        padding: rem(48px) rem(8px) rem(28px);
+    }
 }
 
 .c-footer__logo{
     cursor: pointer;
     height: rem(48px);
-    margin: 0 rem(32px) rem(40px) 0 ;
+    margin: 0 rem(32px) rem(40px) rem(8px) ;
 }
 
 .c-footer__social-icon{
@@ -23,12 +23,8 @@
     stroke: #fff;
     width: rem(48px);
     height: rem(48px);
-    margin-bottom: rem(40px);
+    margin: 0 rem(8px) rem(40px);
     cursor: pointer;
-}
-
-.c-footer__social-icon + .c-footer__social-icon{
-    margin-left: rem(24px);
 }
 
 .c-footer__text{
@@ -44,11 +40,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: rem(8px);
 
     @include mq(phone-large){
         justify-content: space-between;
     }
+}
+
+.c-footer__rights{
+    margin: rem(8px);
 }
 
 .c-footer__link{
@@ -56,9 +55,5 @@
     cursor: pointer;
     font-size: 16;
     color: white;
-    
-}
-
-.c-footer__link  + .c-footer__link{
-margin-left: rem(16px); 
+    margin: rem(8px);
 }

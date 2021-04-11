@@ -1,0 +1,27 @@
+.c-menu{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    padding: rem(16px);
+}
+
+.c-menu__close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(32px);
+}
+
+.c-menu-nav{
+}
+
+.c-menu-nav__item{
+    font-weight: 700;
+    margin-bottom: rem(8px);
+}

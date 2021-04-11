@@ -9,12 +9,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: map-get($breakpoints, tablet-large);
-    padding: rem(32px) rem(16px) 0;
+    padding: rem(24px) rem(16px) 0;
     margin: auto;
     cursor: pointer;
 
-    @include mq(phone-large){
-        padding: rem(52px) rem(32px) 0;
+    @include mq(tablet){
+        padding: rem(52px) rem(16px) 0;
     }
 
 

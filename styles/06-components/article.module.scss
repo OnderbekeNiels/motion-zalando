@@ -6,7 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: rem(16px);
+
+    padding: rem(16px) rem(8px) 0;
+
+    @include mq(phone-large){
+        padding-top: rem(32px);
+    } 
 }
 
 .c-article__info{
@@ -16,7 +21,8 @@
 
     line-height: 1.3;
     font-size: rem(24px);
-    max-width: rem(476px);  
+    max-width: rem(472px);
+    margin: rem(8px);  
 
     @include mq(tablet){
         font-size: rem(32px);
@@ -35,6 +41,7 @@
 
     min-width: rem(680px) * 0.4;
     min-height: rem(424px) * 0.4;
+    margin: rem(8px) rem(8px) 0; 
 
     @include mq(tablet){
         width: rem(680px) * 0.9;

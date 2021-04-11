@@ -32,7 +32,7 @@ export default function Home() {
           <Row className='o-row--md'>
             <Container className='u-text--align-center'>
               <h1 className="u-text-headline u-mb--md">De nummer 1 online kledingwinkel in België</h1>
-              <h2 className="u-text-subheadline u-mb--xxl">Verfris je kleerkast of accessoire collectie<br />in een paar klikken.</h2>
+              <h2 className="u-text-subheadline u-mb--xl">Verfris je kleerkast of accessoire collectie<br />in een paar klikken.</h2>
               <Button text='Start met shoppen' className='c-button--cta' href='https://www.zalando.be/'></Button>
             </Container>
           </Row>
@@ -84,8 +84,7 @@ export default function Home() {
               <h1 className="u-text-headline">Wat maakt zalando zo uniek?</h1>
             </Container>
           </Row>
-          <Row className='o-row--md u-bg-color-accents--yellow-250'>
-            
+          <Row className='u-bg-color-accents--yellow-250'>
               <Container className='c-card-container'>
                 <Card title='Bewaar de artikelen die je leuk vindt.' description='Geef de artikelen die jou aantrekken een hartje & vindt deze steeds terug na het scrollen door ons assortiment.' animation={heartPop} />
                 <Card title='Nieuw kledingstijl ? Help! ' description='Scroll door vele verschillende stijlen en vindt de look die bij jou past! Zalando sorteert ze alvast voor jou.' animation={clothesCarousel} />
@@ -100,24 +99,24 @@ export default function Home() {
               <h2 className="u-text-subheadline">Bekende merken, simple, accesoires, … <br />We hebben het allemaal</h2>
             </Container>
           </Row>
-          <Row className='o-row-half--md o-row--splitted-right u-mb--xxxl u-bg-color-accents--green-500'>
-            <Container className='o-container--splitted-right'>
+          <Row className='o-row--splitted-right u-mb--xxxl u-bg-color-accents--green-500'>
+            <Container className='c-article-container o-container--splitted-right'>
               <Article title='Bekende merken' description='Bij zalando vind je alle grote merken die nu hip zijn. Zo ben je altijd mee met de laatste mode en trends.' imgSrc='/img/png/branch.png' imgAlt='Foto van man in kleding van Lacoste.' imgWidth='680px' imgHeight='424px' hasButton={true} buttonTitle='Shop hier' href='https://www.zalando.be/luxe-herenkleding/' />
             </Container>
           </Row>
-
-          <Row className='o-row-half--md o-row--splitted-left u-mb--xxxl u-bg-color-accents--cyan-500 u-flex-9-of-10'>
-            <Container className='o-container--splitted-left'>
+          <Row className='o-row--splitted-left u-mb--xxxl u-bg-color-accents--cyan-500 u-flex-9-of-10'>
+            <Container className='c-article-container o-container--splitted-left'>
               <Article reverse={true} title='Ongezien groot aanbod' description='Scroll uren door kleding zonder je te vervelen. Hier vind je altijd wel iets dat je wil hebben.' imgSrc='/img/png/clothes.png' imgAlt='Foto van kleding op een rek.' imgWidth='680px' imgHeight='424px' />
             </Container>
           </Row>
-          <Row className='o-row-half--md o-row--splitted-right u-bg-color-accents--gold-500  u-flex-9-of-10'>
+          <Row className='o-row--splitted-right u-bg-color-accents--gold-500  u-flex-9-of-10'>
             <Container className='o-container--splitted-right'>
               <Article title='zalando lounge' description='Op zoek naar een deal? Op zalando lounge vindt je steeds kortingen op zowel dames als heren kleding & accesoires. Zeker het bekijken waard.' imgSrc='/img/png/lounge.png' imgAlt='Foto van accesoires.' imgWidth='680px' imgHeight='424px' hasButton={true} buttonTitle='Shop hier' href='https://www.zalando-lounge.com' />
             </Container>
           </Row>
         </Section>
         <Footer className='u-bg-color-accents--purple-500' />
+        
       </main>
     </div>
   )

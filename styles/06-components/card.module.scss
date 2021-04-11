@@ -1,5 +1,6 @@
 .c-card{
     padding: rem(24px) rem(16px);
+    margin: rem(16px);
     background-color: map-get(map-get($palettes, color-neutral), 100);
     max-width: rem(284px);
     display: -webkit-box;
@@ -14,10 +15,19 @@
 }
 
 .c-card-container{
+    padding: rem(24px) 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: rem(24px);
+    padding: rem(16px) 0;
+
+    @include mq(phone-large){
+        padding: rem(32px) 0;
+    } 
 
     @include mq(tablet-large){
         justify-content: space-between;

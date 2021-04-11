@@ -25,8 +25,8 @@ export default function Footer(props: any) {
                     </div>
                 </div>
                 <div className='c-footer__text c-footer__row'>
-                    <p className='u-mb--sm'>&copy; {new Date().getFullYear()} zalando, all rights reserved</p>
-                    <ul className='u-flex-container u-flex-align--center u-mb--sm'>
+                    <p className='c-footer__rights'>&copy; {new Date().getFullYear()} zalando, all rights reserved</p>
+                    <ul className='u-flex-container u-flex-align--center'>
                         <Link href='https://www.zalando.be/zalando-nieuwsbrief'><a className='c-footer__link'>Contact</a></Link>
                         <Link href='https://corporate.zalando.com/en?market=fl-be'><a className='c-footer__link'>Over ons</a></Link>
                         <Link href='https://www.zalando.be/faq/'><a className='c-footer__link'>FAQ & Support</a></Link>
