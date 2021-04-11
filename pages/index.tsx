@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React from 'react';
-import ReactPlayer from 'react-player';
 
 import { GoogleFonts } from "next-google-fonts";
 
@@ -16,6 +15,7 @@ import DeliveryServiceIcon from '../components/DeliveryServiceIcon';
 import heartPop from '../lotties/heartPop.json';
 import clothesCarousel from '../lotties/clothesCarousel.json';
 import card from '../lotties/card.json';
+import Screencast from '../components/Screencast';
 
 
 export default function Home() {
@@ -38,9 +38,7 @@ export default function Home() {
           </Row>
           <Row className='o-row-half--md u-bg-color-accents--blue-500'>
             <Container className='u-flex-container u-flex-justify-content--center'>
-              <div className="c-screencast u-bg-color-neutral--100">
-                <ReactPlayer width={'100%'} height={'100%'} loop={true} playing={true} url="/video/Screencast.mp4" />
-              </div>
+              <Screencast/>
             </Container>
           </Row>
           <Row className='o-row--sm u-bg-color-accents--orange-500'>
