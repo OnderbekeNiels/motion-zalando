@@ -1,6 +1,7 @@
 
 .c-menu{
     position: fixed;
+    opacity: 0;
     top: 0;
     right: 0;
     left: 0;
@@ -19,6 +20,7 @@
 }
 
 .c-menu--visible{
+    opacity: 1;
     transform: translateX(0vw);
 }
 
