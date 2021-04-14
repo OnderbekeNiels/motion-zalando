@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React from 'react';
+import React, { useState } from 'react';
 
 import { GoogleFonts } from "next-google-fonts";
 
@@ -16,9 +16,17 @@ import heartPop from '../lotties/heartPop.json';
 import clothesCarousel from '../lotties/clothesCarousel.json';
 import card from '../lotties/card.json';
 import Screencast from '../components/Screencast';
+import Menu from '../components/Menu';
 
 
 export default function Home() {
+
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+
+  function handleSetMenu(value){
+    setShowMenu(value);
+  }
+
   return (
     <div>
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Taviraj:wght@400;700&display=swap"/>
@@ -27,7 +35,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header />
+        <Header showMenu={showMenu} handleSetMenu={handleSetMenu} />
         <Section className='o-section--md'>
           <Row className='o-row--md'>
             <Container className='u-text--align-center'>
@@ -116,8 +124,8 @@ export default function Home() {
           </Row>
         </Section>
         <Footer className='u-bg-color-accents--purple-500' />
-        
       </main>
+      <Menu showMenu={showMenu} handleSetMenu={handleSetMenu}/>
     </div>
   )
 }
