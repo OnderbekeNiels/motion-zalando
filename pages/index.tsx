@@ -96,7 +96,7 @@ export default function Home() {
           <Row className='u-bg-color-accents--yellow-250'>
               <Container className='c-card-container'>
                 <Card title='Bewaar de artikelen die je leuk vindt.' description='Geef de artikelen die jou aantrekken een hartje & vindt deze steeds terug na het scrollen door ons assortiment.' animation={heartPop} />
-                <Card title='Nieuw kledingstijl ? Help! ' description='Scroll door vele verschillende stijlen en vindt de look die bij jou past! Zalando sorteert ze alvast voor jou.' animation={clothesXCarousel} />
+                <Card title='Nieuw kledingstijl ? Help! ' description='Scroll door vele verschillende stijlen en vindt de look die bij jou past! Zalando sorteert ze alvast voor jou.' animation={clothesCarousel} />
                 <Card title='Betalen? Mogelijkheden genoeg!' description='Betalen bij zalando is een fluitje van een cent. Betaal met Bancontact, Paypal, Meastro, Mastercard, Visa, Amex of gewoonweg met een overschrijving.' animation={card} />
               </Container>
           </Row>

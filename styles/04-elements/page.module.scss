@@ -3,20 +3,21 @@ html {
   font-family: $font-stack-alpha;
   font-size: rem($base-font-size);
   line-height: 1.5;
-  box-sizing: border-box;
 }
 
 ::selection{
   background-color: map-get(map-get($palettes, color-accents), orange-500);
 }
 
+body {
+  font: #{ $base-font-size }/#{ $base-line-height } $font-stack-alpha;
+    box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
-}
-
-body {
-  font: #{ $base-font-size }/#{ $base-line-height } $font-stack-alpha;
-  color: map-get(map-get($palettes, color-neutral), 900);
+  box-sizing: inherit;
 }
